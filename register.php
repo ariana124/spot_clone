@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 
 <?php
+    include("includes/config.php");
     include("includes/classes/account.php");
     include("includes/classes/constants.php");
-        $account = new Account();
+        $account = new Account($con);
 
     include("includes/handlers/register-handler.php");
     include("includes/handlers/login-handler.php");
 
-	function getInputValue($name) {
+    function getInputValue($name) {
         // takes a name of the field and remmembers it fif the field was set
         if (isset($_POST[$name])) {
             echo $_POST[$name];
@@ -26,6 +27,7 @@
             <form id="loginForm" action="register.php" method="POST">
                 <h2>Login to your account</h2>
                 <p>
+                    <?php echo $account->getError(Constants::$loginFailed); ?>
                     <label for="loginUsername">Username</label>
                     <input id="loginUsername" name="loginUsername" type="text" placeholder="e.g. User" required>
                 </p>
@@ -42,6 +44,7 @@
                 <h2>Create your free account</h2>
                 <p>
                     <?php echo $account->getError(Constants::$usernameLength); ?>
+                    <?php echo $account->getError(Constants::$usernameTaken); ?>
                     <label for="username">Username</label>
                     <input id="username" name="username" type="text" placeholder="e.g. User" value="<?php getInputValue('username') ?>" required>
                 </p>
@@ -61,6 +64,7 @@
                 <p>
                     <?php echo $account->getError(Constants::$emailsDoNotMatch); ?>
                     <?php echo $account->getError(Constants::$emailInvalid); ?>
+                    <?php echo $account->getError(Constants::$emailTaken); ?>
                     <label for="email">Email</label>
                     <input id="email" name="email" type="email" placeholder="e.g. frank.ocean@gmail.com" value="<?php getInputValue('email') ?>" required>
                 </p>
