@@ -96,3 +96,12 @@ html, body { /* this is to make the bg image cover the entire page completely */
 #inputContainer button:hover {
     cursor: pointer;
 }
+
+.hasAccountText {
+    text-align: center;
+}
+
+.hasAccountText span {
+    font-weight: bold;
+    font-size: 12px;
+}
