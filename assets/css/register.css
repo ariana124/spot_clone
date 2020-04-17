@@ -1,0 +1,98 @@
+html, body { /* this is to make the bg image cover the entire page completely */
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#background {
+    background-color: #fff;
+    background-image: url(../images/home_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+#loginContainer * {
+    color: #fff;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    line-height: 1em; /* the font size: 1em = 12px, 2em = 24px */
+    box-sizing: border-box; /* when you specify width for something it takes into account the padding and the margin */
+}
+
+#loginContainer {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1024px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #ffc778;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #ffc778;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #ffc778;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #ffc778;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #ffc778;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #ffc778;
+}
+
+#inputContainer {
+    width: 400px;
+    padding: 45px;
+    float: left;
+    border-right: 1px solid #999;
+}
+
+#inputContainer h2 {
+    text-align: center;
+}
+
+#inputContainer input[type="text"],
+#inputContainer input[type="email"],
+#inputContainer input[type="password"] {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    height: 27px;
+    line-height: 27px;
+    width: 100%;
+}
+
+#inputContainer label {
+    color: #fff;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+#inputContainer button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    height: 40px;
+    width: 50%;
+}
+
+#inputContainer button:hover {
+    cursor: pointer;
+}
