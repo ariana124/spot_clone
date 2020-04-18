@@ -105,3 +105,8 @@ html, body { /* this is to make the bg image cover the entire page completely */
     font-weight: bold;
     font-size: 12px;
 }
+
+#registerForm,
+#loginForm {
+    display:none;
+}
