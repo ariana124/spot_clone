@@ -104,6 +104,7 @@ html, body { /* this is to make the bg image cover the entire page completely */
 .hasAccountText span {
     font-weight: bold;
     font-size: 12px;
+    cursor: pointer;
 }
 
 #registerForm,
