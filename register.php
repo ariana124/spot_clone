@@ -45,7 +45,7 @@
         }
 
         ?>
-
+        
         <div id="background">
 
             <div id="loginContainer">
@@ -57,7 +57,7 @@
                         <p>
                             <?php echo $account->getError(Constants::$loginFailed); ?>
                             <label for="loginUsername">Username</label>
-                            <input id="loginUsername" name="loginUsername" type="text" placeholder="e.g. User" required>
+                            <input id="loginUsername" name="loginUsername" type="text" placeholder="e.g. spotuser" required>
                         </p>
 
                         <p>
@@ -67,7 +67,7 @@
 
                         <button type="submit" name="loginButton">LOGIN</button>
 
-			<div class="hasAccountText">
+                        <div class="hasAccountText">
                             <span id="hideLogin">Don't have an account yet? Sign up here.</span>
                         </div>
 
@@ -79,7 +79,7 @@
                             <?php echo $account->getError(Constants::$usernameLength); ?>
                             <?php echo $account->getError(Constants::$usernameTaken); ?>
                             <label for="username">Username</label>
-                            <input id="username" name="username" type="text" placeholder="e.g. User" value="<?php getInputValue('username') ?>" required>
+                            <input id="username" name="username" type="text" placeholder="e.g. spotuser" value="<?php getInputValue('username') ?>" required>
                         </p>
 
                         <p>
@@ -122,14 +122,14 @@
 
                         <button type="submit" name="registerButton">SIGN UP</button>
 
-			<div class="hasAccountText">
+                        <div class="hasAccountText">
                             <span id="hideRegister">Already have an account? Log in here.</span>
                         </div>
 
                     </form>
                 </div>
 
-		<div id="loginText">
+                <div id="loginText">
                     <h1>Get great music, right now</h1>
                     <h2>Listen to a ton of songs for free</h2>
                     <ul>
