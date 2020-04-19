@@ -135,5 +135,6 @@ html, body { /* this is to make the bg image cover the entire page completely */
 #loginText li {
     font-size: 20px;
     list-style-type: none;
-    padding: 10px;
+    padding: 5px 35px;
+    background: url(../images/icons/checkmark.png) no-repeat;
 }
