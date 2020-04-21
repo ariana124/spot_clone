@@ -107,7 +107,7 @@ html, body { /* gets rid of gaps so that it fills the entire span of the page */
 }
 
 .playbackBar .progressBar {
-    margin-top: 3px; 
+    margin-top: 3px;
 }
 
 #nowPlayingLeft .albumArtwork {
@@ -141,4 +141,29 @@ html, body { /* gets rid of gaps so that it fills the entire span of the page */
 
 .volumeBar .progressBar {
     width: 125px;
+}
+
+#topContainer {
+    min-height: 100%;
+    width: 100%;
+}
+
+#navBarContainer {
+    background-color: #000;
+    width: 220px;
+    height: 100vh; /* means that the navBar will always be 100% of the view height on the page */
+    position: fixed;
+    top: 0; /* along with a fixed position the navBar will always stay to the top left of the page */
+    left: 0;
+}
+
+.navBar {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column; /* flex support for internet explorer users */
+}
+
+.logo img {
+    width: 40px;
 }
