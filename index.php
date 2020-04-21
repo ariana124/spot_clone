@@ -31,6 +31,7 @@ else {
                     <div class="content playerControls"> <!-- these are 2 classes -->
 
                         <div class="buttons">
+
                             <button class="controlButton shuffle" title="shuffle button">
                                 <img src="assets/images/icons/shuffle.png" alt="Shuffle">
                             </button>
@@ -54,6 +55,21 @@ else {
                             <button class="controlButton repeat" title="repeat button">
                                 <img src="assets/images/icons/repeat.png" alt="Repeat">
                             </button>
+
+                        </div>
+
+			    <div class="playbackBar">
+
+                            <span class="progressTime current">0:00</span>
+
+                            <div class="progressBar">
+                                <div class="progressBarBg">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+
+                            <span class="progressTime remaining">0:00</span>
+
                         </div>
 
                     </div>
