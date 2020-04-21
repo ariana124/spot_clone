@@ -164,6 +164,40 @@ html, body { /* gets rid of gaps so that it fills the entire span of the page */
     -ms-flex-direction: column; /* flex support for internet explorer users */
 }
 
+.logo {
+    margin-bottom: 15px;
+}
+
 .logo img {
     width: 40px;
+}
+
+.navBar .group {
+    border-top: 1px solid #A0A09D;
+    padding: 10px 0;
+}
+
+.navItem {
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 560;
+    display: block;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.navItemLink {
+    color: #ffc778;
+    text-decoration: none; /* removes line under links */
+}
+
+.navItemLink:hover {
+    color: #fff;
+}
+
+.icon {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 30px;
 }
