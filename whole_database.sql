@@ -1,5 +1,5 @@
 -- Creates the database for the spotify clone with the following tables:
---    artists, albums, songs, genres, users
+--    users, artists, genres, albums, songs
 
 CREATE DATABASE IF NOT EXISTS spot_clone;
 
