@@ -1,6 +1,10 @@
 -- Creates the database for the spotify clone with the following tables:
 --    users, artists, genres, albums, songs
 
+-- Still need to figure out if this is the right time zone
+
+SET time_zone = '+00:00';
+
 CREATE DATABASE IF NOT EXISTS spot_clone;
 
 USE spot_clone;
