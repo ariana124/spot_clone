@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS albums (
        title VARCHAR(100) NOT NULL,
        artist INT NOT NULL,
        genre INT NOT NULL,
-       artworkPath VARCHAR(500)
+       artworkPath VARCHAR(500),
        PRIMARY KEY (id));
 
 -- Table structure for the table 'songs'
@@ -55,5 +55,5 @@ CREATE TABLE IF NOT EXISTS songs (
        duration VARCHAR(8) NOT NULL,
        path VARCHAR(500) NOT NULL,
        albumOrder INT NOT NULL,
-       plays INT NOT NULL
+       plays INT NOT NULL,
        PRIMARY KEY (id));
