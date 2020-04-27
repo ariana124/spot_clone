@@ -13,14 +13,16 @@
         while ($row = mysqli_fetch_array($albumQuery)) {
             // The two dots are concatenating the 5 strings: the opening div, the image source, the second opening div, the
 	    // album title string, and the closing divs.
+
+            // The ? signifies the following value is a parameter.
             echo "<div class='gridViewItem'>
+                    <a href='album.php?id=" . $row['id'] . "'>
+                        <img src='" . $row['artworkPath'] . "'>
 
-                    <img src='" . $row['artworkPath'] . "'>
-
-                    <div class='gridViewInfo'>"
-                        . $row['title'] .
-                    "</div>
-
+                        <div class='gridViewInfo'>"
+                            . $row['title'] .
+                        "</div>
+                    </a>
                 </div>";
         }
     ?>
