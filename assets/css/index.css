@@ -239,7 +239,7 @@ body {
     font-weight: 300;
     text-align: center;
     padding: 5px 0;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; /* this is for in case the album title is too long and changes the text that would extent outside of the container into ellipsis */
     overflow: hidden;
     white-space: nowrap;
 }
