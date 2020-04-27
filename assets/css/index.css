@@ -9,6 +9,12 @@ html, body { /* gets rid of gaps so that it fills the entire span of the page */
     color: #fff;
 }
 
+body {
+    background-color: #181818;
+    font-size: 14px;
+    min-width: 720px; /* when the user minimizes their browser the body will not go any smaller than 720px */
+}
+
 #nowPlayingBarContainer {
     width: 100%;
     background-color: #282828;
@@ -200,4 +206,14 @@ html, body { /* gets rid of gaps so that it fills the entire span of the page */
     right: 0;
     top: 5px;
     width: 30px;
+}
+
+#mainViewContainer {
+    margin-left: 220px;     /*this is so the content of the page doesn't overlap/underlap the navigation bar, same goes for the padding*/
+    padding-bottom: 90px;
+    width: calc(100% - 220px); /* calculates the full width of the page minus the navigation bar, instead of doing it manually */
+}
+
+#mainContent {
+    padding: 0 20px;
 }
