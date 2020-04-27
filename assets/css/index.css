@@ -7,6 +7,7 @@ html, body { /* gets rid of gaps so that it fills the entire span of the page */
 * {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
+    letter-spacing: 0.5px;
 }
 
 body {
@@ -242,4 +243,8 @@ body {
     text-overflow: ellipsis; /* this is for in case the album title is too long and changes the text that would extent outside of the container into ellipsis */
     overflow: hidden;
     white-space: nowrap;
+}
+
+.gridViewItem a {
+    text-decoration: none;
 }
