@@ -28,6 +28,14 @@ else {
                 <!-- at runtime pastes the code from the navBarContainer.php file here into the index.php -->
                 <?php include("includes/navBarContainer.php"); ?>
 
+                <div id="mainViewContainer">
+
+                    <div id="mainContent">
+
+                    </div>
+
+                </div>
+
             </div>
 
             <?php include("includes/nowPlayingBar.php"); ?>
