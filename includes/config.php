@@ -1,16 +1,17 @@
 <?php
-    // turns on output buffering
-    // when php pays loads it sends data to the servers in pieces
+    // Turns on output buffering
+    // When php pays loads it sends data to the servers in pieces
     ob_start();
     session_start();
 
     $timezone = date_default_timezone_set("America/Los_Angeles");
 
-    // takes the parameters: servername, username, password, & database
+    // Takes the parameters: servername, username, password, & database
+    // The variable $con is the connection to the database
     $con = mysqli_connect("localhost", "root", "", "spot_clone");
 
     if (mysqli_connect_errno()) {
-        // the dot appends the error message
+        // The dot appends the error message
         echo "Failed to connect: " . mysqli_connect_errno();
     }
 ?>
