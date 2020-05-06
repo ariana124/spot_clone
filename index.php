@@ -15,6 +15,7 @@
 	    // album title string, and the closing divs.
 
             // The ? signifies the following value is a parameter.
+	    // In the url, takes the id # to find its respective album from the database.
             echo "<div class='gridViewItem'>
                     <a href='album.php?id=" . $row['id'] . "'>
                         <img src='" . $row['artworkPath'] . "'>
