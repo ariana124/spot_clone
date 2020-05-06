@@ -1,6 +1,7 @@
 ?php
 //allows index page to use session without creating another session here
 include("includes/config.php");
+include("includes/classes/artist.php");
 
 //session_destroy(); only include this when you want to logout manually (refreshing the index page)
 
