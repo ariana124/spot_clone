@@ -24,7 +24,7 @@
         </div>
 
         <div id="nowPlayingCenter">
-            <div class="content playerControls"> <!-- these are 2 classes -->
+            <div class="content playerControls"> <!-- These are 2 classes. -->
 
                 <div class="buttons">
 
