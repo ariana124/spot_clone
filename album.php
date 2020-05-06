@@ -1,7 +1,7 @@
 <?php include("includes/header.php");
 
 // This makes the variable albumId contain the id of the album from the database
-// so I can use it later get more information about the album
+// so I can use it later to get more information about the album
 if (isset($_GET['id'])) {
     $albumId = $_GET['id'];
 }
